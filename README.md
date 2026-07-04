@@ -53,6 +53,7 @@ cd ../frontend && npm install && npm run dev
 
 | 文件 | 內容 |
 |---|---|
+| [新增與更新公司資料指南.md](新增與更新公司資料指南.md) | 手邊有財報時，怎麼新增全新公司 / 更新已登記公司的供應鏈資料 |
 | [docs/usage.md](docs/usage.md) | 安裝、啟動與各功能操作說明 |
 | [docs/development/data-model.md](docs/development/data-model.md) | 節點 / 關係 schema、confidence 與 status 規則 |
 | [docs/development/relationship-types.md](docs/development/relationship-types.md) | 關係類型白名單與方向慣例 |

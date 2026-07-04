@@ -18,6 +18,7 @@ def node_dict(n) -> dict:
         "ticker": n.get("ticker"),
         "is_listed_in_tw": n.get("is_listed_in_tw"),
         "category": n.get("category"),
+        "status": n.get("status"),
     }
 
 
@@ -67,6 +68,7 @@ def neighborhood(
         "  ($min_confidence IS NULL OR coalesce(rel.confidence, 0.0) >= $min_confidence) "
         "  AND ($status IS NULL OR rel.status = $status) "
         "  AND coalesce(rel.status, '') <> 'rejected') "
+        "  AND all(n IN nodes(p) WHERE coalesce(n.status, '') <> 'rejected') "
         "UNWIND nodes(p) AS n UNWIND relationships(p) AS r "
         "RETURN collect(DISTINCT n) AS nodes, collect(DISTINCT r) AS rels"
     )
@@ -79,7 +81,8 @@ def neighborhood(
     if not any(n["id"] == node_id for n in nodes):
         center_full = run_query(
             "MATCH (n {id: $id}) RETURN n.id AS id, labels(n)[0] AS type, n.name AS name, "
-            "n.ticker AS ticker, n.is_listed_in_tw AS is_listed_in_tw, n.category AS category",
+            "n.ticker AS ticker, n.is_listed_in_tw AS is_listed_in_tw, n.category AS category, "
+            "n.status AS status",
             id=node_id,
         )
         nodes = center_full + nodes

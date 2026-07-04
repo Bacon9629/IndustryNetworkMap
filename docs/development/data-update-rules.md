@@ -36,3 +36,22 @@ candidate ──接受──→ verified ──失效──→ stale / deprecate
 | review_note | 審核備註（接受/拒絕理由、deprecated 依據） |
 
 Review API 見 backend/README.md；審核 UI 為 frontend `/review`。
+
+## 節點審核（Phase 9.1）
+
+新增公司 / 產品（含設備，`Product.category=Equipment`）/ 產業 / 應用等節點，走與關係候選相同的
+candidate → review 流程，欄位定義見 `docs/development/data-model.md`「節點審核欄位」。
+
+1. **來源要求與關係候選相同**：只能從已登記 `Source`（`ingestion/rag/documents/` + `manifest.csv`）抽取，
+   evidence 必須逐字引用原文，禁止編造未在原文出現的欄位（例如沒提到 ticker 就留 `null`，不得臆測）。
+2. **一律先 candidate**：`ingestion/rag/extract_entities.py` 只從既有關係抽取流程解析不到的實體
+   （`unresolved_entities.jsonl`）產生節點候選，輸出 `node_candidates.jsonl`；
+   `ingestion/rag/load_node_candidates.py` 寫入 Neo4j 一律 `status=candidate`、`created_by=llm_extraction`。
+3. **無法確認 id 就不入庫**：`Company` 缺 `ticker`/`exchange` 時不得臆測 id，改列入
+   `rag/extracted/node_needs_manual_review.jsonl`，由人工於 seed CSV 手動建立。
+4. **審核**：`/review` 頁「候選節點」分頁 Accept（→ `verified`）/ Reject（→ `rejected`，保留於 graph 但預設排除於搜尋與查詢）；
+   candidate 節點在 Accept 前**仍會顯示**於搜尋結果與 Focus Graph（比照 candidate 關係以虛線標示未審核），
+   但不應被當作已確認事實用於正式分析結論。
+5. **禁止覆蓋既有 verified 節點**：同 id 節點已存在且非 candidate 時，載入腳本一律略過。
+6. Accept 後建議定期回寫 `seed_*.csv`，維持 graph 可由 seed 完整重建。
+

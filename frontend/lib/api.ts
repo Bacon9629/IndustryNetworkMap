@@ -24,6 +24,7 @@ export interface GraphNode {
   ticker?: string | null;
   is_listed_in_tw?: boolean | null;
   category?: string | null;
+  status?: string | null;
 }
 
 export interface GraphEdge {
@@ -147,4 +148,10 @@ export interface ReviewCandidate {
   to: { id: string; name: string; type: string };
   properties: Record<string, unknown>;
   sources: Record<string, unknown>[];
+}
+
+export interface NodeReviewCandidate {
+  id: string;
+  type: string;
+  properties: Record<string, unknown>;
 }

@@ -8,6 +8,8 @@ from ..db import run_query
 
 router = APIRouter()
 
+NODE_LABELS = {"Company", "Product", "Industry", "Application"}
+
 
 def _now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -121,4 +123,105 @@ def patch_candidate(edge_id: str, body: CandidatePatch):
     )
     if not rows:
         raise HTTPException(status_code=404, detail=f"candidate edge '{edge_id}' not found（不存在或非 candidate）")
+    return rows[0]
+
+
+# --- 候選節點審核（Phase 9.1，見 docs/development/data-model.md「節點審核欄位」） ---
+
+NODE_LIST_QUERY = """
+MATCH (n)
+WHERE labels(n)[0] IN $labels
+  AND n.status = 'candidate'
+  AND ($label IS NULL OR labels(n)[0] = $label)
+  AND ($min_confidence IS NULL OR coalesce(n.confidence, 0) >= $min_confidence)
+  AND ($created_by IS NULL OR n.created_by = $created_by)
+RETURN n.id AS id, labels(n)[0] AS type, properties(n) AS props
+ORDER BY coalesce(n.confidence, 0) DESC, n.id
+SKIP $offset LIMIT $limit
+"""
+
+NODE_COUNT_QUERY = """
+MATCH (n)
+WHERE labels(n)[0] IN $labels
+  AND n.status = 'candidate'
+  AND ($label IS NULL OR labels(n)[0] = $label)
+  AND ($min_confidence IS NULL OR coalesce(n.confidence, 0) >= $min_confidence)
+  AND ($created_by IS NULL OR n.created_by = $created_by)
+RETURN count(n) AS total
+"""
+
+
+@router.get("/review/nodes")
+def list_node_candidates(
+    label: str | None = None,
+    min_confidence: float | None = Query(None, ge=0, le=1),
+    created_by: str | None = None,
+    limit: int = Query(50, ge=1, le=200),
+    offset: int = Query(0, ge=0),
+):
+    if label and label not in NODE_LABELS:
+        raise HTTPException(status_code=400, detail=f"unknown node label '{label}'（允許值：{sorted(NODE_LABELS)}）")
+    params = dict(labels=sorted(NODE_LABELS), label=label, min_confidence=min_confidence, created_by=created_by)
+    total = run_query(NODE_COUNT_QUERY, **params)[0]["total"]
+    rows = run_query(NODE_LIST_QUERY, **params, limit=limit, offset=offset)
+    return {
+        "total": total,
+        "candidates": [{"id": r["id"], "type": r["type"], "properties": r["props"]} for r in rows],
+    }
+
+
+class NodePatch(BaseModel):
+    name: str | None = None
+    aliases: list[str] | None = None
+    description: str | None = None
+    category: str | None = None
+    confidence: float | None = Field(None, ge=0, le=1)
+    review_note: str | None = None
+
+
+def _set_node_status(node_id: str, new_status: str, body: ReviewAction) -> dict:
+    rows = run_query(
+        """
+        MATCH (n {id: $node_id})
+        WHERE labels(n)[0] IN $labels AND n.status = 'candidate'
+        SET n.status = $new_status, n.reviewed_at = $now, n.reviewed_by = $reviewed_by,
+            n.review_note = coalesce($review_note, n.review_note), n.updated_at = $now
+        RETURN n.id AS id, labels(n)[0] AS type, n.status AS status
+        """,
+        node_id=node_id, labels=sorted(NODE_LABELS), new_status=new_status, now=_now(),
+        reviewed_by=body.reviewed_by, review_note=body.review_note,
+    )
+    if not rows:
+        raise HTTPException(status_code=404, detail=f"candidate node '{node_id}' not found（不存在或非 candidate）")
+    return rows[0]
+
+
+@router.post("/review/nodes/{node_id}/accept")
+def accept_node_candidate(node_id: str, body: ReviewAction | None = None):
+    return _set_node_status(node_id, "verified", body or ReviewAction())
+
+
+@router.post("/review/nodes/{node_id}/reject")
+def reject_node_candidate(node_id: str, body: ReviewAction | None = None):
+    return _set_node_status(node_id, "rejected", body or ReviewAction())
+
+
+@router.patch("/review/nodes/{node_id}")
+def patch_node_candidate(node_id: str, body: NodePatch):
+    updates = {k: v for k, v in body.model_dump().items() if v is not None and k != "review_note"}
+    if body.review_note is not None:
+        updates["review_note"] = body.review_note
+    if not updates:
+        raise HTTPException(status_code=400, detail="沒有可更新的欄位")
+    rows = run_query(
+        """
+        MATCH (n {id: $node_id})
+        WHERE labels(n)[0] IN $labels AND n.status = 'candidate'
+        SET n += $updates, n.updated_at = $now
+        RETURN n.id AS id, labels(n)[0] AS type, properties(n) AS props
+        """,
+        node_id=node_id, labels=sorted(NODE_LABELS), updates=updates, now=_now(),
+    )
+    if not rows:
+        raise HTTPException(status_code=404, detail=f"candidate node '{node_id}' not found（不存在或非 candidate）")
     return rows[0]

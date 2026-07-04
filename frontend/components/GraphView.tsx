@@ -29,7 +29,7 @@ export default function GraphView({ nodes, edges, centerId, onSelectNode, onSele
       container: containerRef.current,
       elements: [
         ...nodes.map((n) => ({
-          data: { id: n.id, label: n.name ?? n.id, type: n.type, isCenter: n.id === centerId },
+          data: { id: n.id, label: n.name ?? n.id, type: n.type, isCenter: n.id === centerId, status: n.status ?? "" },
         })),
         ...edges.map((e) => ({
           data: { id: e.id, source: e.from, target: e.to, label: e.type, status: e.status ?? "" },
@@ -48,8 +48,13 @@ export default function GraphView({ nodes, edges, centerId, onSelectNode, onSele
             height: 28,
             "background-color": (el: cytoscape.NodeSingular) =>
               NODE_COLORS[el.data("type") as string] ?? "#64748b",
-            "border-width": (el: cytoscape.NodeSingular) => (el.data("isCenter") ? 4 : 0),
-            "border-color": "#facc15",
+            "border-width": (el: cytoscape.NodeSingular) =>
+              el.data("isCenter") ? 4 : el.data("status") === "candidate" ? 2 : 0,
+            "border-color": (el: cytoscape.NodeSingular) =>
+              el.data("isCenter") ? "#facc15" : "#94a3b8",
+            "border-style": (el: cytoscape.NodeSingular) =>
+              !el.data("isCenter") && el.data("status") === "candidate" ? "dashed" : "solid",
+            opacity: (el: cytoscape.NodeSingular) => (el.data("status") === "candidate" ? 0.75 : 1),
           },
         },
         {

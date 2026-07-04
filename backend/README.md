@@ -29,6 +29,10 @@ python -m uvicorn app.main:app --port 8000
 | POST | `/api/review/candidates/{edge_id}/accept` | 接受 → verified，寫 reviewed_at / review_note |
 | POST | `/api/review/candidates/{edge_id}/reject` | 拒絕 → rejected |
 | PATCH | `/api/review/candidates/{edge_id}` | 修改 confidence / note / period（不可改 type 與端點） |
+| GET | `/api/review/nodes` | 列出 status=candidate 節點（篩選 label / min_confidence / created_by，分頁） |
+| POST | `/api/review/nodes/{node_id}/accept` | 接受 → verified，寫 reviewed_at / review_note |
+| POST | `/api/review/nodes/{node_id}/reject` | 拒絕 → rejected（保留於 graph，搜尋/圖譜預設排除） |
+| PATCH | `/api/review/nodes/{node_id}` | 修改 name / aliases / description / category / confidence / review_note（不可改 id） |
 | POST | `/api/ask` | 自然語言查詢：LLM 解析 intent → 執行分析 → 生成解釋（需 `OPENAI_API_KEY`，未設定回 503） |
 
 ## 設計備註

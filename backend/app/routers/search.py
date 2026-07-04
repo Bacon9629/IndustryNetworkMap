@@ -7,6 +7,7 @@ router = APIRouter()
 SEARCH_QUERY = """
 MATCH (n)
 WHERE (n:Company OR n:Product OR n:Industry OR n:Application)
+  AND coalesce(n.status, '') <> 'rejected'
   AND (toLower(n.name) CONTAINS toLower($q)
        OR toLower(coalesce(n.english_name, '')) CONTAINS toLower($q)
        OR coalesce(n.ticker, '') = $q
@@ -14,7 +15,7 @@ WHERE (n:Company OR n:Product OR n:Industry OR n:Application)
 RETURN n.id AS id, labels(n)[0] AS type, n.name AS name,
        n.english_name AS english_name, n.ticker AS ticker,
        n.exchange AS exchange, n.is_listed_in_tw AS is_listed_in_tw,
-       n.description AS description
+       n.description AS description, n.status AS status
 ORDER BY n.name
 LIMIT $limit
 """

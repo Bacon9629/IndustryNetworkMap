@@ -15,7 +15,7 @@
 | 6 | Demand Shock 分析 | **完成**（API + UI，score = path_confidence × path_decay） |
 | 7 | 資料品質與審核流程 | **完成**（Review API + `/review` 頁、created_by/reviewed_* 欄位、docs/development/data-update-rules.md） |
 | 8 | 擴充至台股前 100 | **完成**（110 家公司 / 65 產品 / 31 產業 / 16 應用 / 393 關係，已匯入驗證） |
-| 9 | RAG / Agent 資料抽取 | **程式完成**（登記/解析/索引/抽取/入庫 candidate；索引與抽取實測待 OPENAI_API_KEY） |
+| 9 | RAG / Agent 資料抽取 | **程式完成**（登記/解析/索引/抽取/入庫 candidate，含節點候選 extract_entities.py/load_node_candidates.py 與 `/review` 節點審核分頁；索引與抽取實測待 OPENAI_API_KEY） |
 | 10 | 產品化與進階分析 | **完成 10.1-10.3**（key-nodes / bottlenecks / concentration / supply-disruption / demand-shock 方向 / `/api/ask`；10.4 3D 依原則不做） |
 
 ## 可運行的系統
@@ -37,8 +37,10 @@ python rag/register_sources.py     # manifest.csv → Source 節點（不需 key
 python rag/parse_documents.py      # 解析 + chunking → chunks/chunks.jsonl（不需 key）
 python rag/build_index.py          # Chroma 向量索引（需 OPENAI_API_KEY）
 python rag/search.py "台積電 供應鏈"  # RAG 檢索驗證（需 key）
-python rag/extract.py              # LLM 抽取 candidate entities/relationships（需 key）
+python rag/extract.py              # LLM 抽取 candidate 關係（需 key）
 python rag/load_candidates.py      # 寫入 Neo4j，一律 status=candidate → /review 審核（不需 key）
+python rag/extract_entities.py     # 對抽取不到的實體，LLM 建議新節點屬性（需 key）
+python rag/load_node_candidates.py # 寫入 Neo4j 候選節點，一律 status=candidate → /review 審核（不需 key）
 ```
 
 ## 待辦

@@ -23,6 +23,24 @@
 - 同一實體只能有一個節點；別名放 `aliases`，不建立重複節點。
 - `aliases` 在 CSV 中以分號 `;` 分隔。
 
+## 節點審核欄位（Phase 9.1，比照關係審核）
+
+`Company` / `Product` / `Industry` / `Application` 節點支援以下審核欄位（沿用 `docs/development/data-model.md` 關係審核的同一套語彙）：
+
+| 欄位 | 說明 |
+|---|---|
+| `status` | `candidate`（LLM 抽取、未審核） / `verified`（人工確認或 seed 公開周知事實） / `rejected`（審核拒絕）。**未設定 `status` 的既有節點（manual_seed）視同 `verified`。** |
+| `created_by` | `manual_seed` 或 `llm_extraction` |
+| `reviewed_at` / `reviewed_by` / `review_note` | 最近一次審核動作 |
+
+規則：
+
+1. **Agent / LLM 建立的節點一律 `status=candidate`、`created_by=llm_extraction`**，未經 `/review` 人工接受不得視為正式資料。
+2. **禁止覆蓋既有 `verified` 節點**：載入 candidate 節點時，若同 id 節點已存在且 `status` 為 `null`（等同 verified）或 `verified`，一律略過、不得修改其屬性；只有 id 尚不存在、或既有節點本身仍是 `candidate` 時才可 MERGE 寫入或更新。
+3. 節點 id 一律由程式依本文件 id 規則產生；`Company` 若無法從原文確認 `ticker` + `exchange`，不得臆測 id，該筆改列入人工待建清單（不入庫）。
+4. Reject 的節點保留於 graph（不硬刪除），查詢與搜尋預設排除 `status=rejected` 的節點。
+5. Accept 後建議定期回寫對應 `seed_*.csv`，維持「graph 可由 seed 完整重建」原則。
+
 ---
 
 ## 節點類型

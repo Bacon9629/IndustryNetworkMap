@@ -1,5 +1,7 @@
 # IndustryNetworkMap
 
+
+RAG/LLM features require `OPENAI_API_KEY` in `.env`.
 台股產業鏈知識圖譜 Web App。以 graph 為基礎的產業鏈研究工具：公司、產品、產業、應用是節點，供應 / 代工 / 生產 / 需求驅動等有方向的關係是邊，每條邊都可追蹤來源與可信度。
 
 ![demo 1](docs/src/FocusGraph.png)
@@ -15,19 +17,29 @@
 - **自然語言查詢**：中文提問，LLM 解析後執行 graph 分析並生成有憑據的解釋
 - **RAG 資料抽取**：從年報等文件半自動抽取供應鏈關係，經人工審核後入庫
 
-## 架構
+## Quick Start
 
-```text
-Next.js + Cytoscape.js  (frontend, :3000)
-        ↓
-FastAPI                 (backend, :8000)
-        ↓
-Neo4j                   (graph database, :7687)
-        ↑
-Python ingestion        (seed CSV / RAG 抽取 → 驗證 → 匯入)
+PowerShell one-command startup:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File C:\Users\Bacon\Documents\python\IndustryNetworkMap\scripts\start-dev.ps1
 ```
 
-## 快速開始
+This starts Neo4j, validates/imports seed data, opens backend and frontend dev-server windows, then opens:
+
+- Web app: http://localhost:3000
+- Backend API: http://localhost:8000
+- Neo4j Browser: http://localhost:7474
+
+Useful options:
+
+```powershell
+.\scripts\start-dev.ps1 -SkipInstall   # reuse installed Python/npm dependencies
+.\scripts\start-dev.ps1 -SkipImport    # skip seed validation/import
+.\scripts\start-dev.ps1 -NoOpen        # do not open browser automatically
+```
+
+## 手動開始
 
 ```bash
 # 1. Neo4j
@@ -48,6 +60,18 @@ cd ../frontend && npm install && npm run dev
 開啟 http://localhost:3000 。自然語言查詢與 RAG 抽取需在根目錄 `.env` 設定 `OPENAI_API_KEY`（選用）。
 
 詳細操作見 [docs/usage.md](docs/usage.md)。
+
+## 架構
+
+```text
+Next.js + Cytoscape.js  (frontend, :3000)
+        ↓
+FastAPI                 (backend, :8000)
+        ↓
+Neo4j                   (graph database, :7687)
+        ↑
+Python ingestion        (seed CSV / RAG 抽取 → 驗證 → 匯入)
+```
 
 ## 文件
 

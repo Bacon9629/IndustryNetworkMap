@@ -1,4 +1,5 @@
 id,name,parent_application_id,description
+high_performance_computing,High Performance Computing,,High performance computing workloads and infrastructure
 ai_datacenter,AI 資料中心,,AI 訓練與推論用資料中心
 cloud_computing,雲端運算,,一般雲端運算基礎設施
 smartphone_market,智慧型手機市場,,智慧型手機終端市場

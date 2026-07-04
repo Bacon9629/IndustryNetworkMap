@@ -55,7 +55,13 @@ FORBIDDEN_TYPES = {"RELATED_TO", "LINKED_TO", "ASSOCIATED_WITH"}
 
 def load_csv(path: Path) -> list[dict]:
     with open(path, encoding="utf-8-sig", newline="") as f:
-        return list(csv.DictReader(f))
+        rows = []
+        for row in csv.DictReader(f):
+            rows.append({
+                (key or "").strip(): (value or "").strip()
+                for key, value in row.items()
+            })
+        return rows
 
 
 def validate(seeds_dir: Path) -> tuple[list[str], dict[str, str]]:

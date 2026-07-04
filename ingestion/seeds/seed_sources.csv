@@ -1,4 +1,9 @@
 id,title,type,url,publisher,published_date,retrieved_at,company_id,period,language
+source_delta_2025_chairman_statement,Delta Electronics 2025 Chairman Statement,company_website,https://www.deltaww.com/zh-TW/investors/chairman-statement,Delta Electronics,,2026-07-05,TWSE_2308,2025,zh-TW
+source_delta_2024_annual_report,Delta Electronics 2024 Annual Report,annual_report,https://landing.deltaww.com/zh-TW/Investors/annual-Reports,Delta Electronics,,2026-07-05,TWSE_2308,2024,zh-TW
+source_delta_2025_q3_financial_report,Delta Electronics 2025 Q3 Financial Report,financial_report,https://landing.deltaww.com/zh-TW/Investors/financial-Reports,Delta Electronics,,2026-07-05,TWSE_2308,2025Q3,zh-TW
+source_delta_2025_q3_results_news,Delta Electronics Announces 2025-Q3 Financial Results,company_website,https://landing.deltaww.com/en-us/news/39958,Delta Electronics,,2026-07-05,TWSE_2308,2025Q3,en-US
+source_delta_2025_force_gt_ai_datacenter,Delta Force-GT AI Data Center Power and Liquid Cooling Source,company_website,https://www.deltaww.com/zh-TW/press/39905,Delta Electronics,,2026-07-05,TWSE_2308,2025,zh-TW
 source_manual_seed_v0,人工整理初始 seed 資料,manual,,,,2026-07-03,,2026,zh-TW
 source_manual_seed_v1,Phase 2.2 人工整理 AI Server 供應鏈 seed 資料,manual,,,,2026-07-03,,2026,zh-TW
 source_manual_seed_v2,Phase 8 人工整理台股前 100 擴充 seed 資料,manual,,,,2026-07-03,,2026,zh-TW

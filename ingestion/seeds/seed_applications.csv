@@ -1,0 +1,17 @@
+id,name,parent_application_id,description
+ai_datacenter,AI 資料中心,,AI 訓練與推論用資料中心
+cloud_computing,雲端運算,,一般雲端運算基礎設施
+smartphone_market,智慧型手機市場,,智慧型手機終端市場
+pc_notebook,個人電腦與筆電,,PC 與筆記型電腦市場
+automotive_electronics,車用電子,,汽車電子與電動車市場
+networking,網路通訊,,網路與通訊設備市場
+consumer_electronics,消費性電子,,一般消費性電子市場
+edge_ai,邊緣 AI,,終端裝置 AI 運算應用
+financial_market,金融市場,,銀行保險證券等金融服務市場
+global_trade,全球貿易與物流,,國際貿易與運輸物流需求
+construction,營建與基礎建設,,營建工程與公共基礎建設
+general_consumer,民生消費,,食品、零售、服飾等民生消費市場
+green_energy,綠能與電力基礎建設,,再生能源、電網與電力設備需求
+industrial_automation,工業自動化,,工廠自動化與智慧製造
+automotive_market,汽車市場,,整車與售後市場需求
+aerospace_market,航太與國防市場,,航太製造與國防需求

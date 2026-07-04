@@ -1,0 +1,32 @@
+id,name,parent_industry_id,description
+semiconductor,半導體,,半導體產業總類
+semiconductor_foundry,晶圓代工,semiconductor,半導體晶圓代工產業
+ic_design,IC 設計,semiconductor,無晶圓廠 IC 設計產業
+osat,封裝測試,semiconductor,半導體封裝與測試產業
+memory_industry,記憶體,semiconductor,DRAM / Flash 記憶體產業
+semiconductor_equipment,半導體設備,semiconductor,半導體製造設備產業
+server_odm,伺服器 ODM,,伺服器設計代工產業
+ems,電子代工服務,,EMS 電子製造服務產業
+power_supply_industry,電源供應器,,電源供應器產業
+thermal_industry,散熱,,散熱模組與解決方案產業
+pcb_industry,印刷電路板,,PCB 產業
+connector_industry,連接器與線束,,連接器與線束產業
+consumer_brand,消費電子品牌,,終端消費電子品牌
+financial_holding,金融控股與金融服務,,金控、銀行、保險、證券、租賃
+telecom,電信服務,,電信網路服務產業
+petrochemical,塑膠與石化,,塑化與石油化學產業
+steel,鋼鐵,,鋼鐵冶煉與加工產業
+cement,水泥,,水泥與預拌混凝土產業
+food_beverage,食品飲料,,食品飲料製造產業
+retail_ecommerce,零售與電商,,實體零售與電子商務產業
+textile_footwear,紡織與製鞋,,紡織成衣與製鞋代工產業
+shipping,航運,,海運貨櫃與散裝運輸產業
+airline,航空運輸,,客貨航空運輸產業
+automotive,汽車與零組件,,整車、輪胎與汽車零組件產業
+bicycle,自行車,,自行車與零組件產業
+industrial_equipment,機電與工業設備,,重電、自動化與工業設備產業
+display_panel,顯示面板,,TFT-LCD 與顯示器面板產業
+optics,光學元件,,光學鏡頭與元件產業
+passive_component,被動元件,,電阻、電容等被動元件產業
+aerospace_defense,航太與國防,,航太製造與國防工業
+network_equipment,網通設備,,網路與通訊設備產業

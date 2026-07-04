@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+.next/
+
+# Env / secrets
+.env
+.env.local
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Neo4j local data (if not using docker volume)
+infra/neo4j/data/
+
+# RAG generated artifacts
+ingestion/rag/chroma/
+ingestion/rag/chunks/
+ingestion/rag/extracted/

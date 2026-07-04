@@ -1,0 +1,4 @@
+id,title,type,url,publisher,published_date,retrieved_at,company_id,period,language
+source_manual_seed_v0,人工整理初始 seed 資料,manual,,,,2026-07-03,,2026,zh-TW
+source_manual_seed_v1,Phase 2.2 人工整理 AI Server 供應鏈 seed 資料,manual,,,,2026-07-03,,2026,zh-TW
+source_manual_seed_v2,Phase 8 人工整理台股前 100 擴充 seed 資料,manual,,,,2026-07-03,,2026,zh-TW

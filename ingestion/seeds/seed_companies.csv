@@ -1,0 +1,110 @@
+id,name,english_name,ticker,exchange,country,is_listed_in_tw,aliases,website,description,snapshot_date
+TWSE_2330,台積電,Taiwan Semiconductor Manufacturing Company,2330,TWSE,Taiwan,true,TSMC;2330.TW;台灣積體電路製造,https://www.tsmc.com,全球晶圓代工龍頭,2026-07-03
+TWSE_2454,聯發科,MediaTek Inc.,2454,TWSE,Taiwan,true,MediaTek;2454.TW,https://www.mediatek.com,IC 設計，手機 SoC 與 ASIC,2026-07-03
+TWSE_3711,日月光投控,ASE Technology Holding,3711,TWSE,Taiwan,true,ASE;日月光;3711.TW,https://www.aseglobal.com,全球最大封裝測試代工廠,2026-07-03
+TWSE_2317,鴻海,Hon Hai Precision Industry,2317,TWSE,Taiwan,true,Foxconn;富士康;2317.TW,https://www.honhai.com,全球最大 EMS 電子代工廠,2026-07-03
+TWSE_2382,廣達,Quanta Computer,2382,TWSE,Taiwan,true,Quanta;2382.TW,https://www.quantatw.com,筆電與 AI 伺服器 ODM,2026-07-03
+TWSE_3231,緯創,Wistron Corporation,3231,TWSE,Taiwan,true,Wistron;3231.TW,https://www.wistron.com,伺服器與資訊產品 ODM,2026-07-03
+TWSE_2356,英業達,Inventec Corporation,2356,TWSE,Taiwan,true,Inventec;2356.TW,https://www.inventec.com,伺服器與筆電 ODM,2026-07-03
+TWSE_2308,台達電,Delta Electronics,2308,TWSE,Taiwan,true,Delta;2308.TW,https://www.deltaww.com,電源管理與散熱解決方案龍頭,2026-07-03
+TWSE_2368,金像電,Gold Circuit Electronics,2368,TWSE,Taiwan,true,GCE;2368.TW,https://www.gce.com.tw,伺服器 PCB 大廠,2026-07-03
+TWSE_3044,健鼎,Tripod Technology,3044,TWSE,Taiwan,true,Tripod;3044.TW,https://www.tripodtech.net,PCB 大廠,2026-07-03
+TWSE_3017,奇鋐,Asia Vital Components,3017,TWSE,Taiwan,true,AVC;3017.TW,https://www.avc.co,散熱模組與伺服器水冷大廠,2026-07-03
+TWSE_3324,雙鴻,Auras Technology,3324,TWSE,Taiwan,true,Auras;3324.TW,https://www.auras.com.tw,散熱模組廠，AI 伺服器水冷供應商,2026-07-03
+TWSE_3023,信邦,Sinbon Electronics,3023,TWSE,Taiwan,true,Sinbon;3023.TW,https://www.sinbon.com,連接線束與整合解決方案,2026-07-03
+TWSE_3665,貿聯-KY,BizLink Holding,3665,TWSE,Taiwan,true,BizLink;3665.TW,https://www.bizlinktech.com,連接線束大廠，伺服器與車用線束,2026-07-03
+TWSE_3034,聯詠,Novatek Microelectronics,3034,TWSE,Taiwan,true,Novatek;3034.TW,https://www.novatek.com.tw,IC 設計，顯示驅動 IC 龍頭,2026-07-03
+TWSE_2379,瑞昱,Realtek Semiconductor,2379,TWSE,Taiwan,true,Realtek;2379.TW,https://www.realtek.com,IC 設計，網通與多媒體 IC,2026-07-03
+TWSE_2344,華邦電,Winbond Electronics,2344,TWSE,Taiwan,true,Winbond;2344.TW,https://www.winbond.com,利基型記憶體製造商,2026-07-03
+TWSE_2408,南亞科,Nanya Technology,2408,TWSE,Taiwan,true,Nanya Tech;2408.TW,https://www.nanya.com,DRAM 製造商,2026-07-03
+TPEX_5347,世界先進,Vanguard International Semiconductor,5347,TPEX,Taiwan,true,VIS;5347.TWO,https://www.vis.com.tw,成熟製程晶圓代工,2026-07-03
+TWSE_6770,力積電,Powerchip Semiconductor Manufacturing,6770,TWSE,Taiwan,true,PSMC;6770.TW,https://www.powerchip.com,記憶體與邏輯晶圓代工,2026-07-03
+US_NVDA,NVIDIA,NVIDIA Corporation,NVDA,NASDAQ,US,false,輝達;英偉達,https://www.nvidia.com,AI GPU 設計公司,2026-07-03
+US_AMD,AMD,Advanced Micro Devices,AMD,NASDAQ,US,false,超微,https://www.amd.com,CPU 與 AI GPU 設計公司,2026-07-03
+US_AAPL,Apple,Apple Inc.,AAPL,NASDAQ,US,false,蘋果,https://www.apple.com,消費電子品牌，iPhone / Mac,2026-07-03
+NL_ASML,ASML,ASML Holding,ASML,Euronext,Netherlands,false,艾司摩爾,https://www.asml.com,EUV 曝光機獨家供應商,2026-07-03
+KR_005930,Samsung Electronics,Samsung Electronics,005930,KRX,South Korea,false,三星電子,https://www.samsung.com,記憶體與晶圓代工大廠,2026-07-03
+KR_000660,SK Hynix,SK Hynix,000660,KRX,South Korea,false,SK海力士,https://www.skhynix.com,DRAM 與 HBM 大廠,2026-07-03
+US_MU,Micron,Micron Technology,MU,NASDAQ,US,false,美光,https://www.micron.com,DRAM 與 NAND 大廠,2026-07-03
+TWSE_2881,富邦金,Fubon Financial Holding,2881,TWSE,Taiwan,true,富邦金控;2881.TW,,大型金控：銀行、保險、證券,2026-07-03
+TWSE_2882,國泰金,Cathay Financial Holding,2882,TWSE,Taiwan,true,國泰金控;2882.TW,,大型金控：壽險、銀行,2026-07-03
+TWSE_2891,中信金,CTBC Financial Holding,2891,TWSE,Taiwan,true,中信金控;2891.TW,,大型金控：銀行為主,2026-07-03
+TWSE_2886,兆豐金,Mega Financial Holding,2886,TWSE,Taiwan,true,兆豐金控;2886.TW,,公股金控：銀行為主,2026-07-03
+TWSE_2884,玉山金,E.SUN Financial Holding,2884,TWSE,Taiwan,true,玉山金控;2884.TW,,民營金控：銀行為主,2026-07-03
+TWSE_2885,元大金,Yuanta Financial Holding,2885,TWSE,Taiwan,true,元大金控;2885.TW,,金控：證券龍頭,2026-07-03
+TWSE_2892,第一金,First Financial Holding,2892,TWSE,Taiwan,true,第一金控;2892.TW,,公股金控：銀行為主,2026-07-03
+TWSE_5880,合庫金,Taiwan Cooperative Financial Holding,5880,TWSE,Taiwan,true,合庫金控;5880.TW,,公股金控：銀行為主,2026-07-03
+TWSE_2880,華南金,Hua Nan Financial Holding,2880,TWSE,Taiwan,true,華南金控;2880.TW,,公股金控：銀行為主,2026-07-03
+TWSE_2890,永豐金,SinoPac Financial Holding,2890,TWSE,Taiwan,true,永豐金控;2890.TW,,民營金控：銀行、證券,2026-07-03
+TWSE_2887,台新金,Taishin Financial Holding,2887,TWSE,Taiwan,true,台新金控;2887.TW,,民營金控：銀行為主,2026-07-03
+TWSE_2883,凱基金,KGI Financial Holding,2883,TWSE,Taiwan,true,凱基金控;開發金;2883.TW,,金控：證券、壽險,2026-07-03
+TWSE_5871,中租-KY,Chailease Holding,5871,TWSE,Taiwan,true,中租控股;5871.TW,,租賃與分期融資龍頭,2026-07-03
+TWSE_2412,中華電,Chunghwa Telecom,2412,TWSE,Taiwan,true,中華電信;2412.TW,,台灣最大電信業者,2026-07-03
+TWSE_3045,台灣大,Taiwan Mobile,3045,TWSE,Taiwan,true,台灣大哥大;3045.TW,,電信業者，富邦集團,2026-07-03
+TWSE_4904,遠傳,Far EasTone Telecommunications,4904,TWSE,Taiwan,true,遠傳電信;4904.TW,,電信業者，遠東集團,2026-07-03
+TWSE_2303,聯電,United Microelectronics Corporation,2303,TWSE,Taiwan,true,UMC;2303.TW,,成熟製程晶圓代工大廠,2026-07-03
+TWSE_3661,世芯-KY,Alchip Technologies,3661,TWSE,Taiwan,true,世芯;Alchip;3661.TW,,高階 ASIC 設計服務,2026-07-03
+TWSE_3443,創意,Global Unichip Corp,3443,TWSE,Taiwan,true,創意電子;GUC;3443.TW,,ASIC 設計服務，台積電轉投資,2026-07-03
+TWSE_5269,祥碩,ASMedia Technology,5269,TWSE,Taiwan,true,祥碩科技;5269.TW,,高速介面 IC 設計，華碩子公司,2026-07-03
+TPEX_8299,群聯,Phison Electronics,8299,TPEX,Taiwan,true,群聯電子;8299.TWO,,NAND 控制晶片與儲存方案,2026-07-03
+TPEX_3529,力旺,eMemory Technology,3529,TPEX,Taiwan,true,力旺電子;3529.TWO,,矽智財（NVM IP）,2026-07-03
+TPEX_5274,信驊,ASPEED Technology,5274,TPEX,Taiwan,true,信驊科技;5274.TWO,,伺服器 BMC 晶片龍頭,2026-07-03
+TWSE_6239,力成,Powertech Technology,6239,TWSE,Taiwan,true,力成科技;6239.TW,,記憶體封裝測試大廠,2026-07-03
+TWSE_2449,京元電子,King Yuan Electronics,2449,TWSE,Taiwan,true,京元電;2449.TW,,半導體測試大廠,2026-07-03
+TWSE_3532,台勝科,Formosa Sumco Technology,3532,TWSE,Taiwan,true,台勝科技;3532.TW,,矽晶圓製造,2026-07-03
+TWSE_6415,矽力-KY,Silergy Corp,6415,TWSE,Taiwan,true,矽力杰;6415.TW,,電源管理 IC 設計,2026-07-03
+TWSE_2409,友達,AUO Corporation,2409,TWSE,Taiwan,true,友達光電;2409.TW,,顯示面板大廠,2026-07-03
+TWSE_3481,群創,Innolux Corporation,3481,TWSE,Taiwan,true,群創光電;3481.TW,,顯示面板大廠,2026-07-03
+TWSE_3008,大立光,Largan Precision,3008,TWSE,Taiwan,true,大立光電;3008.TW,,智慧型手機光學鏡頭龍頭,2026-07-03
+TWSE_2357,華碩,ASUSTeK Computer,2357,TWSE,Taiwan,true,ASUS;2357.TW,,PC 品牌與主機板/顯卡大廠,2026-07-03
+TWSE_4938,和碩,Pegatron Corporation,4938,TWSE,Taiwan,true,和碩聯合;4938.TW,,EMS 代工大廠,2026-07-03
+TWSE_2324,仁寶,Compal Electronics,2324,TWSE,Taiwan,true,仁寶電腦;2324.TW,,筆電 ODM 大廠,2026-07-03
+TWSE_2353,宏碁,Acer Incorporated,2353,TWSE,Taiwan,true,acer;2353.TW,,PC 品牌廠,2026-07-03
+TWSE_2377,微星,Micro-Star International,2377,TWSE,Taiwan,true,MSI;2377.TW,,主機板/顯卡/電競品牌,2026-07-03
+TWSE_2376,技嘉,GIGA-BYTE Technology,2376,TWSE,Taiwan,true,GIGABYTE;2376.TW,,主機板/顯卡與 AI 伺服器,2026-07-03
+TWSE_6669,緯穎,Wiwynn Corporation,6669,TWSE,Taiwan,true,緯穎科技;6669.TW,,雲端資料中心伺服器 ODM，緯創轉投資,2026-07-03
+TWSE_2395,研華,Advantech Co.,2395,TWSE,Taiwan,true,研華科技;2395.TW,,工業電腦龍頭,2026-07-03
+TWSE_2345,智邦,Accton Technology,2345,TWSE,Taiwan,true,智邦科技;2345.TW,,網路交換器 ODM 龍頭,2026-07-03
+TWSE_2301,光寶科,LITE-ON Technology,2301,TWSE,Taiwan,true,光寶科技;2301.TW,,電源供應器與光電元件,2026-07-03
+TWSE_2327,國巨,Yageo Corporation,2327,TWSE,Taiwan,true,國巨股份;2327.TW,,被動元件龍頭,2026-07-03
+TWSE_2354,鴻準,Foxconn Technology,2354,TWSE,Taiwan,true,鴻準精密;2354.TW,,散熱與機構件，鴻海集團,2026-07-03
+TWSE_2360,致茂,Chroma ATE,2360,TWSE,Taiwan,true,致茂電子;2360.TW,,量測與自動化測試設備,2026-07-03
+TWSE_3037,欣興,Unimicron Technology,3037,TWSE,Taiwan,true,欣興電子;3037.TW,,IC 載板與 PCB 大廠,2026-07-03
+TWSE_8046,南電,Nan Ya PCB,8046,TWSE,Taiwan,true,南亞電路板;8046.TW,,IC 載板大廠，台塑集團,2026-07-03
+TWSE_2383,台光電,Elite Material,2383,TWSE,Taiwan,true,台光電子;2383.TW,,高階銅箔基板（CCL）大廠,2026-07-03
+TPEX_6274,台燿,Taiwan Union Technology,6274,TPEX,Taiwan,true,台燿科技;6274.TWO,,高頻高速銅箔基板,2026-07-03
+TWSE_3533,嘉澤,Lotes Co.,3533,TWSE,Taiwan,true,嘉澤端子;3533.TW,,CPU Socket 與連接器,2026-07-03
+TWSE_3653,健策,Jentech Precision,3653,TWSE,Taiwan,true,健策精密;3653.TW,,均熱片與導線架,2026-07-03
+TWSE_1590,亞德客-KY,AirTAC International,1590,TWSE,Taiwan,true,亞德客;1590.TW,,氣動元件大廠,2026-07-03
+TWSE_2049,上銀,Hiwin Technologies,2049,TWSE,Taiwan,true,上銀科技;2049.TW,,線性傳動元件大廠,2026-07-03
+TWSE_2059,川湖,King Slide Works,2059,TWSE,Taiwan,true,川湖科技;2059.TW,,伺服器導軌龍頭,2026-07-03
+TWSE_1519,華城,Fortune Electric,1519,TWSE,Taiwan,true,華城電機;1519.TW,,重電變壓器廠,2026-07-03
+TWSE_1513,中興電,Chung-Hsin Electric,1513,TWSE,Taiwan,true,中興電工;1513.TW,,重電與 GIS 開關設備,2026-07-03
+TWSE_1504,東元,TECO Electric and Machinery,1504,TWSE,Taiwan,true,東元電機;1504.TW,,馬達與機電設備,2026-07-03
+TWSE_1605,華新,Walsin Lihwa,1605,TWSE,Taiwan,true,華新麗華;1605.TW,,電線電纜與不銹鋼,2026-07-03
+TWSE_1301,台塑,Formosa Plastics,1301,TWSE,Taiwan,true,台灣塑膠;1301.TW,,塑化大廠，台塑集團,2026-07-03
+TWSE_1303,南亞,Nan Ya Plastics,1303,TWSE,Taiwan,true,南亞塑膠;1303.TW,,塑化與電子材料，台塑集團,2026-07-03
+TWSE_1326,台化,Formosa Chemicals & Fibre,1326,TWSE,Taiwan,true,台灣化學纖維;1326.TW,,石化與纖維，台塑集團,2026-07-03
+TWSE_6505,台塑化,Formosa Petrochemical,6505,TWSE,Taiwan,true,台塑石化;6505.TW,,煉油與石化，台塑集團,2026-07-03
+TWSE_2002,中鋼,China Steel Corporation,2002,TWSE,Taiwan,true,中國鋼鐵;2002.TW,,台灣最大鋼鐵廠,2026-07-03
+TWSE_1101,台泥,Taiwan Cement,1101,TWSE,Taiwan,true,台灣水泥;1101.TW,,水泥龍頭，跨足儲能,2026-07-03
+TWSE_1216,統一,Uni-President Enterprises,1216,TWSE,Taiwan,true,統一企業;1216.TW,,食品飲料龍頭,2026-07-03
+TWSE_2912,統一超,President Chain Store,2912,TWSE,Taiwan,true,統一超商;7-ELEVEN;2912.TW,,便利商店零售龍頭,2026-07-03
+TWSE_8454,富邦媒,momo.com Inc,8454,TWSE,Taiwan,true,momo;富邦媒體科技;8454.TW,,電商平台龍頭,2026-07-03
+TWSE_1402,遠東新,Far Eastern New Century,1402,TWSE,Taiwan,true,遠東新世紀;1402.TW,,聚酯纖維與紡織,2026-07-03
+TWSE_1476,儒鴻,Eclat Textile,1476,TWSE,Taiwan,true,儒鴻企業;1476.TW,,機能布料與成衣大廠,2026-07-03
+TWSE_9904,寶成,Pou Chen Corporation,9904,TWSE,Taiwan,true,寶成工業;9904.TW,,全球最大製鞋代工,2026-07-03
+TWSE_9910,豐泰,Feng TAY Enterprises,9910,TWSE,Taiwan,true,豐泰企業;9910.TW,,運動鞋代工大廠,2026-07-03
+TWSE_2603,長榮,Evergreen Marine,2603,TWSE,Taiwan,true,長榮海運;2603.TW,,貨櫃航運大廠,2026-07-03
+TWSE_2609,陽明,Yang Ming Marine Transport,2609,TWSE,Taiwan,true,陽明海運;2609.TW,,貨櫃航運大廠,2026-07-03
+TWSE_2615,萬海,Wan Hai Lines,2615,TWSE,Taiwan,true,萬海航運;2615.TW,,近洋貨櫃航運,2026-07-03
+TWSE_2618,長榮航,EVA Airways,2618,TWSE,Taiwan,true,長榮航空;2618.TW,,國際航空公司,2026-07-03
+TWSE_2610,華航,China Airlines,2610,TWSE,Taiwan,true,中華航空;2610.TW,,國際航空公司,2026-07-03
+TWSE_2207,和泰車,Hotai Motor,2207,TWSE,Taiwan,true,和泰汽車;2207.TW,,TOYOTA 台灣總代理,2026-07-03
+TWSE_2201,裕隆,Yulon Motor,2201,TWSE,Taiwan,true,裕隆汽車;2201.TW,,汽車製造與銷售,2026-07-03
+TWSE_2105,正新,Cheng Shin Rubber,2105,TWSE,Taiwan,true,正新橡膠;MAXXIS;2105.TW,,輪胎大廠,2026-07-03
+TWSE_9921,巨大,Giant Manufacturing,9921,TWSE,Taiwan,true,巨大機械;捷安特;9921.TW,,自行車龍頭,2026-07-03
+TWSE_9914,美利達,Merida Industry,9914,TWSE,Taiwan,true,美利達工業;9914.TW,,自行車大廠,2026-07-03
+TWSE_2634,漢翔,Aerospace Industrial Development,2634,TWSE,Taiwan,true,漢翔航空;AIDC;2634.TW,,航太製造與國防,2026-07-03
+US_NKE,Nike,"Nike, Inc.",NKE,NYSE,US,false,耐吉,https://www.nike.com,全球運動品牌,2026-07-03
+US_BA,Boeing,The Boeing Company,BA,NYSE,US,false,波音,https://www.boeing.com,航太製造商,2026-07-03

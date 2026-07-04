@@ -1,0 +1,4 @@
+file,source_id,company_id,period,type,url,title,language
+sample_tsmc_supply_chain.txt,source_doc_sample_tsmc,TWSE_2330,2026,company_website,,台積電供應鏈概況（樣本文件）,zh-TW
+sample_ai_server_chain.txt,source_doc_sample_aiserver,TWSE_2382,2026,news,,AI 伺服器供應鏈報導（樣本文件）,zh-TW
+sample_quanta_page.html,source_doc_sample_quanta,TWSE_2382,2026,company_website,,廣達公司簡介頁（樣本 HTML）,zh-TW

@@ -108,3 +108,65 @@ TWSE_9914,美利達,Merida Industry,9914,TWSE,Taiwan,true,美利達工業;9914.T
 TWSE_2634,漢翔,Aerospace Industrial Development,2634,TWSE,Taiwan,true,漢翔航空;AIDC;2634.TW,,航太製造與國防,2026-07-03
 US_NKE,Nike,"Nike, Inc.",NKE,NYSE,US,false,耐吉,https://www.nike.com,全球運動品牌,2026-07-03
 US_BA,Boeing,The Boeing Company,BA,NYSE,US,false,波音,https://www.boeing.com,航太製造商,2026-07-03
+US_MSFT,Microsoft,MICROSOFT CORP,MSFT,Nasdaq,US,false,Microsoft;Azure;MSFT,https://www.microsoft.com,大型 cloud、AI、enterprise software 公司，Azure 是主要 data center 與 AI 基礎設施平台。,2026-07-05
+US_GOOGL,Alphabet,Alphabet Inc.,GOOGL,Nasdaq,US,false,Google;Alphabet;Google Cloud;GOOGL,https://abc.xyz,Google 母公司，核心包含 search、online advertising、Google Cloud 與 AI 基礎設施。,2026-07-05
+US_AMZN,Amazon,AMAZON COM INC,AMZN,Nasdaq,US,false,Amazon;AWS;AMZN,https://www.amazon.com,大型 ecommerce 與 cloud 公司，AWS 是全球主要 cloud infrastructure 與 AI data center 平台。,2026-07-05
+US_META,Meta,"Meta Platforms, Inc.",META,Nasdaq,US,false,Facebook;Instagram;WhatsApp;META,https://about.meta.com,大型 social media 與 online advertising 平台，並大量投資 AI infrastructure。,2026-07-05
+US_TSLA,Tesla,"Tesla, Inc.",TSLA,Nasdaq,US,false,Tesla;TSLA,https://www.tesla.com,大型 electric vehicle、energy storage 與 autonomous driving 平台公司。,2026-07-05
+US_AVGO,Broadcom,Broadcom Inc.,AVGO,Nasdaq,US,false,Broadcom;AVGO,https://www.broadcom.com,大型 semiconductor 與 infrastructure software 公司，產品涵蓋 network IC、custom AI accelerator 與 connectivity。,2026-07-05
+US_ORCL,Oracle,ORACLE CORP,ORCL,NYSE,US,false,Oracle;OCI;ORCL,https://www.oracle.com,大型 database software、enterprise software 與 cloud infrastructure 公司。,2026-07-05
+US_CRM,Salesforce,"Salesforce, Inc.",CRM,NYSE,US,false,Salesforce;CRM,https://www.salesforce.com,大型 SaaS 與 enterprise software 公司，核心為 CRM 與企業雲端應用。,2026-07-05
+US_NFLX,Netflix,NETFLIX INC,NFLX,Nasdaq,US,false,Netflix;NFLX,https://www.netflix.com,大型 streaming service 與內容平台公司。,2026-07-05
+US_ADBE,Adobe,ADOBE INC.,ADBE,Nasdaq,US,false,Adobe;Creative Cloud;ADBE,https://www.adobe.com,大型 creative software、document cloud 與 digital experience software 公司。,2026-07-05
+US_QCOM,Qualcomm,QUALCOMM INC/DE,QCOM,Nasdaq,US,false,Qualcomm;Snapdragon;QCOM,https://www.qualcomm.com,大型 mobile SoC、wireless modem 與 connectivity IC 設計公司。,2026-07-05
+US_INTC,Intel,INTEL CORP,INTC,Nasdaq,US,false,Intel;INTC,https://www.intel.com,大型 CPU、data center、semiconductor manufacturing 與 foundry 公司。,2026-07-05
+US_IBM,IBM,INTERNATIONAL BUSINESS MACHINES CORP,IBM,NYSE,US,false,IBM;Red Hat,https://www.ibm.com,大型 hybrid cloud、AI、enterprise software 與 IT service 公司。,2026-07-05
+US_CSCO,Cisco,"CISCO SYSTEMS, INC.",CSCO,Nasdaq,US,false,Cisco;CSCO,https://www.cisco.com,大型 networking equipment、switch、router 與 security 產品公司。,2026-07-05
+US_TXN,Texas Instruments,TEXAS INSTRUMENTS INC,TXN,Nasdaq,US,false,Texas Instruments;TI;TXN,https://www.ti.com,大型 analog IC 與 embedded processor 半導體公司。,2026-07-05
+US_AMAT,Applied Materials,APPLIED MATERIALS INC /DE,AMAT,Nasdaq,US,false,Applied Materials;AMAT,https://www.appliedmaterials.com,大型 semiconductor equipment 公司，供應晶圓製程設備與服務。,2026-07-05
+US_LRCX,Lam Research,LAM RESEARCH CORP,LRCX,Nasdaq,US,false,Lam Research;LRCX,https://www.lamresearch.com,大型 wafer fabrication equipment 公司，產品用於 semiconductor 製程。,2026-07-05
+US_NOW,ServiceNow,"ServiceNow, Inc.",NOW,NYSE,US,false,ServiceNow;NOW,https://www.servicenow.com,大型 enterprise workflow automation 與 SaaS 平台公司。,2026-07-05
+US_PANW,Palo Alto Networks,Palo Alto Networks Inc,PANW,Nasdaq,US,false,Palo Alto Networks;PANW,https://www.paloaltonetworks.com,大型 cybersecurity software 與 network security 平台公司。,2026-07-05
+US_UBER,Uber,"Uber Technologies, Inc",UBER,NYSE,US,false,Uber;UBER,https://www.uber.com,大型 mobility platform、delivery platform 與 marketplace 公司。,2026-07-05
+US_JPM,JPMorgan Chase,JPMORGAN CHASE & CO,JPM,NYSE,US,false,JPMorgan Chase;JPM,https://www.jpmorganchase.com,大型 banking、investment banking 與 financial service 公司。,2026-07-05
+US_V,Visa,VISA INC.,V,NYSE,US,false,Visa;V,https://www.visa.com,大型 payment network 與 digital payment infrastructure 公司。,2026-07-05
+US_MA,Mastercard,Mastercard Inc,MA,NYSE,US,false,Mastercard;MA,https://www.mastercard.com,大型 payment network 與 digital payment infrastructure 公司。,2026-07-05
+US_WMT,Walmart,Walmart Inc.,WMT,Nasdaq,US,false,Walmart;WMT,https://www.walmart.com,大型 retail、grocery 與 ecommerce 公司。,2026-07-05
+US_LLY,Eli Lilly,ELI LILLY & Co,LLY,NYSE,US,false,Eli Lilly;Lilly;LLY,https://www.lilly.com,"Large US pharmaceutical company focused on diabetes, obesity, oncology, immunology, and neuroscience medicines.",2026-07-05
+US_UNH,UnitedHealth Group,UNITEDHEALTH GROUP INC,UNH,NYSE,US,false,UnitedHealth;Optum;UNH,https://www.unitedhealthgroup.com,Large US healthcare and health insurance company with Optum health services and data operations.,2026-07-05
+US_JNJ,Johnson & Johnson,JOHNSON & JOHNSON,JNJ,NYSE,US,false,Johnson & Johnson;J&J;JNJ,https://www.jnj.com,Large US healthcare company focused on innovative medicine and medtech.,2026-07-05
+US_ABBV,AbbVie,AbbVie Inc.,ABBV,NYSE,US,false,AbbVie;ABBV,https://www.abbvie.com,"Large US biopharmaceutical company focused on immunology, oncology, neuroscience, and aesthetics.",2026-07-05
+US_MRK,Merck,"Merck & Co., Inc.",MRK,NYSE,US,false,Merck;MSD;MRK,https://www.merck.com,"Large US pharmaceutical company focused on oncology, vaccines, hospital acute care, and animal health.",2026-07-05
+US_ABT,Abbott,ABBOTT LABORATORIES,ABT,NYSE,US,false,Abbott;ABT,https://www.abbott.com,"Large US healthcare company focused on diagnostics, medical devices, nutrition, and medicines.",2026-07-05
+US_TMO,Thermo Fisher Scientific,THERMO FISHER SCIENTIFIC INC.,TMO,NYSE,US,false,Thermo Fisher;TMO,https://www.thermofisher.com,"Large US life science tools company providing analytical instruments, reagents, consumables, and services.",2026-07-05
+US_ISRG,Intuitive Surgical,INTUITIVE SURGICAL INC,ISRG,Nasdaq,US,false,Intuitive Surgical;da Vinci;ISRG,https://www.intuitive.com,Large US medical device company focused on robotic-assisted surgical systems.,2026-07-05
+US_XOM,Exxon Mobil,EXXON MOBIL CORP,XOM,NYSE,US,false,ExxonMobil;XOM,https://corporate.exxonmobil.com,"Large US integrated energy company producing oil, natural gas, fuels, chemicals, and low-carbon solutions.",2026-07-05
+US_CVX,Chevron,CHEVRON CORP,CVX,NYSE,US,false,Chevron;CVX,https://www.chevron.com,"Large US integrated energy company producing oil, natural gas, fuels, lubricants, and chemicals.",2026-07-05
+US_COP,ConocoPhillips,CONOCOPHILLIPS,COP,NYSE,US,false,ConocoPhillips;COP,https://www.conocophillips.com,Large US exploration and production company focused on oil and natural gas.,2026-07-05
+US_SLB,SLB,SLB LIMITED/NV,SLB,NYSE,US,false,Schlumberger;SLB,https://www.slb.com,"Large oilfield services company providing drilling, reservoir, production, and digital energy technology.",2026-07-05
+US_COST,Costco,COSTCO WHOLESALE CORP /NEW,COST,Nasdaq,US,false,Costco;COST,https://www.costco.com,"Large membership warehouse retailer selling consumer goods, grocery, fuel, and ecommerce services.",2026-07-05
+US_HD,Home Depot,"HOME DEPOT, INC.",HD,NYSE,US,false,Home Depot;HD,https://www.homedepot.com,Large home improvement retailer serving professional contractors and consumers.,2026-07-05
+US_MCD,McDonald's,MCDONALDS CORP,MCD,NYSE,US,false,McDonald's;MCD,https://www.mcdonalds.com,Large global restaurant brand and franchising company.,2026-07-05
+US_SBUX,Starbucks,STARBUCKS CORP,SBUX,Nasdaq,US,false,Starbucks;SBUX,https://www.starbucks.com,Large coffee retail and restaurant company with company-operated and licensed stores.,2026-07-05
+US_KO,Coca-Cola,COCA COLA CO,KO,NYSE,US,false,Coca-Cola;KO,https://www.coca-colacompany.com,"Large beverage company with global concentrate, syrup, and finished beverage brands.",2026-07-05
+US_PEP,PepsiCo,PEPSICO INC,PEP,Nasdaq,US,false,PepsiCo;Pepsi;PEP,https://www.pepsico.com,Large beverage and convenient foods company with global brands.,2026-07-05
+US_PG,Procter & Gamble,PROCTER & GAMBLE Co,PG,NYSE,US,false,P&G;Procter & Gamble;PG,https://www.pg.com,"Large consumer goods company focused on beauty, grooming, health care, fabric care, home care, and baby care.",2026-07-05
+US_BAC,Bank of America,BANK OF AMERICA CORP /DE/,BAC,NYSE,US,false,Bank of America;BofA;BAC,https://www.bankofamerica.com,"Large US bank providing consumer banking, wealth management, investment banking, and markets services.",2026-07-05
+US_WFC,Wells Fargo,WELLS FARGO & COMPANY/MN,WFC,NYSE,US,false,Wells Fargo;WFC,https://www.wellsfargo.com,"Large US bank providing consumer, commercial, corporate, and investment banking services.",2026-07-05
+US_GS,Goldman Sachs,GOLDMAN SACHS GROUP INC,GS,NYSE,US,false,Goldman Sachs;GS,https://www.goldmansachs.com,Large global investment bank and asset management company.,2026-07-05
+US_MS,Morgan Stanley,MORGAN STANLEY,MS,NYSE,US,false,Morgan Stanley;MS,https://www.morganstanley.com,"Large global financial services company focused on wealth management, investment banking, and markets.",2026-07-05
+US_BLK,BlackRock,"BlackRock, Inc.",BLK,NYSE,US,false,BlackRock;BLK,https://www.blackrock.com,"Large asset manager providing investment management, ETFs, advisory, and technology services.",2026-07-05
+US_SPGI,S&P Global,S&P Global Inc.,SPGI,NYSE,US,false,S&P Global;SPGI,https://www.spglobal.com,"Large financial information, ratings, benchmarks, and data analytics company.",2026-07-05
+US_GE,GE Aerospace,GENERAL ELECTRIC CO,GE,NYSE,US,false,GE Aerospace;General Electric;GE,https://www.geaerospace.com,Large aerospace company producing commercial and defense aircraft engines and systems.,2026-07-05
+US_CAT,Caterpillar,CATERPILLAR INC,CAT,NYSE,US,false,Caterpillar;CAT,https://www.caterpillar.com,"Large industrial company producing construction and mining equipment, engines, turbines, and locomotives.",2026-07-05
+US_RTX,RTX,RTX Corp,RTX,NYSE,US,false,RTX;Raytheon;Pratt & Whitney;Collins Aerospace,https://www.rtx.com,"Large aerospace and defense company producing engines, avionics, missiles, sensors, and defense systems.",2026-07-05
+US_HON,Honeywell,HONEYWELL INTERNATIONAL INC,HON,Nasdaq,US,false,Honeywell;HON,https://www.honeywell.com,"Large industrial technology company focused on aerospace, building automation, industrial automation, and energy solutions.",2026-07-05
+US_DE,Deere,DEERE & CO,DE,NYSE,US,false,John Deere;Deere;DE,https://www.deere.com,Large agricultural and construction equipment company with precision agriculture technology.,2026-07-05
+US_UPS,UPS,UNITED PARCEL SERVICE INC,UPS,NYSE,US,false,UPS;United Parcel Service,https://www.ups.com,Large package delivery and logistics company.,2026-07-05
+US_UNP,Union Pacific,UNION PACIFIC CORP,UNP,NYSE,US,false,Union Pacific;UNP,https://www.up.com,Large US freight railroad company.,2026-07-05
+US_KLAC,KLA,KLA CORP,KLAC,Nasdaq,US,false,KLA;KLAC,https://www.kla.com,Large semiconductor process control and yield management equipment company.,2026-07-05
+US_ADI,Analog Devices,ANALOG DEVICES INC,ADI,Nasdaq,US,false,Analog Devices;ADI,https://www.analog.com,"Large analog, mixed-signal, power management, and sensor IC company.",2026-07-05
+US_MRVL,Marvell Technology,"Marvell Technology, Inc.",MRVL,Nasdaq,US,false,Marvell;MRVL,https://www.marvell.com,"Large semiconductor company focused on data infrastructure, networking, storage, and custom silicon.",2026-07-05
+US_MCHP,Microchip Technology,MICROCHIP TECHNOLOGY INC,MCHP,Nasdaq,US,false,Microchip;MCHP,https://www.microchip.com,"Large semiconductor company focused on microcontrollers, analog IC, embedded control, and connectivity.",2026-07-05
+US_PLTR,Palantir,Palantir Technologies Inc.,PLTR,Nasdaq,US,false,Palantir;PLTR,https://www.palantir.com,Large data analytics and AI software company serving commercial and government customers.,2026-07-05
+US_SNOW,Snowflake,Snowflake Inc.,SNOW,NYSE,US,false,Snowflake;SNOW,https://www.snowflake.com,Large data cloud software company providing cloud data platform and analytics services.,2026-07-05

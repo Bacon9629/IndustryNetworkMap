@@ -1,5 +1,28 @@
 # IndustryNetworkMap
 
+## Data Enrichment Workflow
+
+To expand the graph with Taiwan top 100 companies, large US companies, official filings, and a shared progress table, use:
+
+- Workflow: [docs/development/company-data-enrichment-workflow.md](docs/development/company-data-enrichment-workflow.md)
+- Progress table: [ingestion/progress/company_update_progress.csv](ingestion/progress/company_update_progress.csv)
+- US universe: [ingestion/seeds/universe_us_large_cap.csv](ingestion/seeds/universe_us_large_cap.csv)
+
+Refresh the reusable company universe and official source pointers:
+
+```powershell
+python ingestion/scripts/refresh_company_universe.py --write
+python ingestion/validators/validate.py ingestion/seeds
+python ingestion/scripts/import_graph.py --seeds ingestion/seeds
+```
+
+Download, parse, and index official documents for RAG search/extraction:
+
+```powershell
+python ingestion/scripts/sync_sources_to_rag_manifest.py
+python ingestion/rag/parse_documents.py
+python ingestion/rag/build_index.py --batch-size 32
+```
 
 RAG/LLM features require `OPENAI_API_KEY` in `.env`.
 台股產業鏈知識圖譜 Web App。以 graph 為基礎的產業鏈研究工具：公司、產品、產業、應用是節點，供應 / 代工 / 生產 / 需求驅動等有方向的關係是邊，每條邊都可追蹤來源與可信度。

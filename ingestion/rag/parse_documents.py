@@ -3,8 +3,11 @@
 Usage (from ingestion/):
     python rag/parse_documents.py [--manifest rag/documents/manifest.csv] [--out rag/chunks/chunks.jsonl]
 
-Chunking: ~800 chars with 100 overlap; each chunk keeps source_id / file / seq.
+Chunking: about 800 characters with 100 characters of overlap.
+Each chunk keeps source_id, file, company_id, period, and sequence metadata.
 """
+
+from __future__ import annotations
 
 import argparse
 import csv
@@ -19,10 +22,12 @@ def read_text(path: Path) -> str:
     suffix = path.suffix.lower()
     if suffix == ".pdf":
         from pypdf import PdfReader
+
         reader = PdfReader(str(path))
         return "\n".join(page.extract_text() or "" for page in reader.pages)
     if suffix in {".html", ".htm"}:
         from bs4 import BeautifulSoup
+
         soup = BeautifulSoup(path.read_text(encoding="utf-8"), "html.parser")
         return soup.get_text(separator="\n")
     return path.read_text(encoding="utf-8")
@@ -61,7 +66,8 @@ def main() -> int:
         for row in rows:
             doc_path = manifest_path.parent / row["file"]
             text = read_text(doc_path)
-            for seq, chunk in enumerate(chunk_text(text)):
+            chunks = chunk_text(text)
+            for seq, chunk in enumerate(chunks):
                 record = {
                     "chunk_id": f"{row['source_id']}_chunk_{seq:03d}",
                     "source_id": row["source_id"],
@@ -73,8 +79,8 @@ def main() -> int:
                 }
                 out.write(json.dumps(record, ensure_ascii=False) + "\n")
                 n_chunks += 1
-            print(f"{row['file']}: {seq + 1} chunks")
-    print(f"完成：{len(rows)} 份文件 → {n_chunks} 個 chunks（{out_path}）")
+            print(f"{row['file']}: {len(chunks)} chunks")
+    print(f"Parsed {len(rows)} documents into {n_chunks} chunks: {out_path}")
     return 0
 
 

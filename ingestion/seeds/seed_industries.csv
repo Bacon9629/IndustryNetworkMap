@@ -30,3 +30,14 @@ optics,光學元件,,光學鏡頭與元件產業
 passive_component,被動元件,,電阻、電容等被動元件產業
 aerospace_defense,航太與國防,,航太製造與國防工業
 network_equipment,網通設備,,網路與通訊設備產業
+software_cloud,Software and Cloud,,"Cloud infrastructure, enterprise software, SaaS, data analytics, and cybersecurity."
+internet_platform,Internet Platform,,"Search, advertising, social media, ecommerce, streaming, and online marketplace platforms."
+financial_services,Financial Services,,"Banking, payments, capital markets, asset management, and financial information services."
+healthcare,Healthcare,,"Pharmaceuticals, medical devices, diagnostics, healthcare services, and life science tools."
+energy,Energy,,"Oil, natural gas, refined petroleum, oilfield service, and energy technology."
+retail,Retail,,"Physical and online retail services, wholesale clubs, and home improvement retail."
+restaurants,Restaurants,,"Restaurant, coffee retail, and quick-service restaurant operations."
+consumer_staples,Consumer Staples,,"Beverages, packaged food, and household consumer goods."
+industrial_machinery,Industrial Machinery,,"Construction, mining, agriculture, automation, and heavy industrial equipment."
+transportation_logistics,Transportation and Logistics,,"Parcel delivery, freight railroad, shipping, and logistics services."
+automotive_ev,Automotive and EV,automotive,"Electric vehicles, automotive platforms, energy storage, and autonomous driving."
